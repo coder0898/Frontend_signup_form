@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor Sigup Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="right-side">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="left-side">
+        <header>
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        </header>
+        <div class="form-container">
+          <form>
+            <!-- first Name -->
+            <div class="form-group">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="First Name"
+                  required
+                />
+                <img id="fnameIcon" src="./images/icon-error.svg" alt="404" />
+              </div>
+              <p id="nameError"></p>
+            </div>
+            <!-- last Name -->
+            <div class="form-group">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Last Name"
+                  required
+                />
+                <img id="lnameIcon" src="./images/icon-error.svg" alt="404" />
+              </div>
+              <p id="lastNameError"></p>
+            </div>
+            <!-- email -->
+            <div class="form-group">
+              <div class="input-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="emailId"
+                  placeholder="Email Address"
+                  required
+                />
+                <img id="emailIcon" src="./images/icon-error.svg" alt="404" />
+              </div>
+              <p id="emailError"></p>
+            </div>
+            <!-- password -->
+            <div class="form-group">
+              <div class="input-group">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                  autocomplete="current-password"
+                  required
+                />
+                <img
+                  id="passwordIcon"
+                  src="./images/icon-error.svg"
+                  alt="404"
+                />
+              </div>
+              <p id="passwordError"></p>
+            </div>
+            <button id="submitBtn">Claim your free trial</button>
+          </form>
+          <a href="#"
+            >By clicking the button, you are agreeing to our
+            <span class="link-span">Terms and Services</span></a
+          >
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <span>Pratik Bakshi</span>.
+      </p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
